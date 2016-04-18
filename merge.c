@@ -3,7 +3,7 @@
  void merge(int a[],int low,int mid,int high);
 int main () {
 
-   int n[ 11 ]={10,5,6,9,8,7,5,2,3,4,10}; 
+   int n[ 11 ]={10,5,6,9,8,7,5,11,3,4,10}; 
    mergesort (n,0,10);
    
    for (int j = 0; j < 11; j++ ) {
@@ -20,7 +20,7 @@ void mergesort(int a[],int low,int high){
    }
 }
 void merge(int a[],int low,int mid,int high){
-  int dst[1000]; 
+  int dst[high-low+1]; 
   int i1=low;
   int i2=mid+1;
   int k=0;
